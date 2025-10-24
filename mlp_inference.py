@@ -8,9 +8,6 @@ import torch.nn as nn
 from transformers import AutoModel, AutoTokenizer
 import torch.nn.functional as F
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-import os
-import torch
-import torch.nn as nn
 
 def mean_pooling(model_output, attention_mask):
     token_embeddings = model_output[0]
